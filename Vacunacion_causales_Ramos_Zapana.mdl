@@ -1,0 +1,112 @@
+{UTF-8}
+AFLUENCIA DE PACIENTES  = A FUNCTION OF( )
+	~	
+	~		|
+
+ALMACEN  = A FUNCTION OF( AFLUENCIA DE PACIENTES,PUBLICIDAD)
+	~	
+	~		|
+
+PACIENTES REGISTRADOS  = A FUNCTION OF( PC´s HABILITADAS)
+	~	
+	~		|
+
+PACIENTES VACUNADOS  = A FUNCTION OF( AFLUENCIA DE PACIENTES,ALMACEN,PACIENTES REGISTRADOS\
+		,PUBLICIDAD)
+	~	
+	~		|
+
+PC´s HABILITADAS  = A FUNCTION OF( PERSONAL DE REGISTROS,PROBLEMAS CON REGISTROS)
+	~	
+	~		|
+
+PERSONAL DE REGISTROS  = A FUNCTION OF( )
+	~	
+	~		|
+
+PROBLEMAS CON REGISTROS  = A FUNCTION OF( AFLUENCIA DE PACIENTES)
+	~	
+	~		|
+
+PUBLICIDAD  = A FUNCTION OF( AFLUENCIA DE PACIENTES,PACIENTES VACUNADOS)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Parámetros de control de simulación
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	El período final de la simulación.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	El período inicial de la simulación.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	La frecuencia con la que se almacena la salida.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	El "Incremento de tiempo" para la simulación.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Pantalla 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+10,1,ALMACEN,323,388,40,20,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,PUBLICIDAD,427,164,60,23,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,AFLUENCIA DE PACIENTES,572,347,87,25,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,4,PACIENTES VACUNADOS,683,232,63,19,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,5,PACIENTES REGISTRADOS,907,145,64,19,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,6,PC´s HABILITADAS,1164,152,63,20,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,7,PERSONAL DE REGISTROS,1097,272,64,24,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,8,PROBLEMAS CON REGISTROS,884,359,72,21,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,9,2,1,1,0,45,12,2,64,0,-1--1--1,|0||-1--1--1,1|(304,248)|
+1,10,3,1,1,0,45,12,2,64,0,-1--1--1,|0||-1--1--1,1|(456,428)|
+1,11,4,2,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(520,259)|
+1,12,5,4,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(772,159)|
+1,13,6,5,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(1036,85)|
+1,14,7,6,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(1047,180)|
+1,15,8,6,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(1168,311)|
+1,16,3,2,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(244,279)|
+1,17,3,8,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(776,447)|
+1,18,2,4,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(561,128)|
+1,19,1,4,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(453,241)|
+1,20,3,4,1,0,43,12,2,64,0,-1--1--1,|0||-1--1--1,1|(708,316)|
+///---\\\
+:L<%^E!@
+5:PACIENTES VACUNADOS
+9:Actual
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+77:0
+78:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
